@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { ProductsContext } from '../../contexts/productsContext'
+import Loading from '../Loading'
 
 const Header = () => {
     const [query, setQuery] = useState('')
@@ -18,6 +19,7 @@ const Header = () => {
                 <input type='text' name='search' value={query} onChange={e => setQuery(e.target.value)} />
                 <input type='submit' value='Buscar' />
             </form>
+            <Loading/>
         </nav>
     )
 }
