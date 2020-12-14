@@ -1,10 +1,13 @@
-import './App.css';
+// import React from 'React'
+import './App.css'
+import ProductsProvider from './contexts/productsContext';
+import Main from './pages/Main';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      App works!!
-    </div>
+    <ProductsProvider>
+      <Main />
+    </ProductsProvider>
   );
 }
 
