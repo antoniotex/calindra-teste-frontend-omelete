@@ -4,7 +4,9 @@
     margin: 20px auto;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+}
+.header__logo{
+    cursor: pointer;
 }
 .search{
     max-width: 500px;
@@ -29,7 +31,7 @@
 .search__submit{
     background-color: #ffbf00;
     border: none;
-    height: 41px;
+    height: 42px;
     font-size: 20px;
     color: #5b5b5b;
     border-radius: 0 10px 10px 0;

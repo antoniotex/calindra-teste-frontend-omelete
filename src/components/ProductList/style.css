@@ -15,3 +15,9 @@
     font-size: 25px;
     align-self: center;
 }
+.productList__back{
+    cursor: pointer;
+    color: #eee;
+    font-size: 18px;
+    align-self: center;
+}

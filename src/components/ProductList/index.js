@@ -4,7 +4,7 @@ import ProductCard from '../ProductCard'
 import './style.css'
 
 const ProductList = () => {
-    const { products } = useContext(ProductsContext)
+    const { products, searchProducts } = useContext(ProductsContext)
     return (
         <section className='productList'>
             <h1 className='productList__title'>
@@ -12,6 +12,8 @@ const ProductList = () => {
                     : products.items.length > 0 ? `Busca por '${products.query}'`
                     : `Não encontramos nenhum produto em sua busca por '${products.query}'`}
             </h1>
+
+            {products.query && <a className='productList__back' onClick={() => searchProducts('')}>Voltar para Página Inicial</a>}
 
             <div className='productList__list'>
                 {products.items && products.items.map((item, index) => (

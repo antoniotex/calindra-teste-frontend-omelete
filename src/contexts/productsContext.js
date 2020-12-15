@@ -11,6 +11,10 @@ const ProductsProvider = ({ children }) => {
         searchProducts()
     }, []);
 
+    /**
+     * Função para buscar os produtos de acordo com a palavra-chave
+     * @param {*} query 
+     */
     const searchProducts = async (query) => {
         setLoading(true)
         try {

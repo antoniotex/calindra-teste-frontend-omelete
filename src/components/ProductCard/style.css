@@ -2,7 +2,7 @@
     border: 3px solid #5b5b5b;
     width: 25%;
     color: #eee;
-    margin: 20px 40px 10px 0;
+    margin: 20px 20px;
     position: relative;
     background-color: #5b5b5b;
 }
@@ -26,6 +26,7 @@
     width: 63px;
     height: 63px;
     border-radius: 50%;
+    right: -5px;
     border: 3px dashed red;
     position: absolute;
     animation: discountRotate 15s linear infinite;
@@ -61,4 +62,23 @@
 @keyframes discountRotate{
     0% { transform: rotate(0deg) }
   100% { transform: rotate(360deg) }
+}
+
+
+@media screen and (max-width: 1024px){
+    .productCard{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .productCard{
+        width: 60%;
+    }
+    .productCard__prices--default{
+        font-size: 20px;
+    }
+    .productCard__prices--discount{
+        font-size: 15px;
+    }
 }
