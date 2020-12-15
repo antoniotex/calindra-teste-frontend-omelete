@@ -1,3 +1,6 @@
 body {
   margin: 0;
+  background-image: url('./assets/images/background-dark.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
