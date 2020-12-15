@@ -14,9 +14,22 @@ const ProductsProvider = ({ children }) => {
     const searchProducts = async (query) => {
         setLoading(true)
         try {
-            const response = await axios.get(`/autocomplete/${query || 'marvel'}`)
-            const { items } = response.data
-            console.log(items)
+            let items = null;
+
+            // Esta verificação é feita só para preencher os produtos na página inicial
+            if(!query){
+                await axios.all([
+                    axios.get(`/autocomplete/${'marvel'}`),
+                    axios.get(`/autocomplete/${'batman'}`),
+                    axios.get(`/autocomplete/${'caneca'}`)
+                ]).then(axios.spread((res1, res2, res3) => {
+                    items = [...res1.data.items, ...res2.data.items, ...res3.data.items]
+               }))
+            }else{
+                const result = await (await axios.get(`/autocomplete/${query}`))
+                items = result.data.items
+            }
+
             setProducts({
                 items,
                 query

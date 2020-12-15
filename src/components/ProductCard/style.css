@@ -12,20 +12,53 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: red;
+    background-color: #ffbf00;
+    color: #5b5b5b;
     position: absolute;
     right: -15px;
     top: -15px;
     border-radius: 50%;
     font-weight: bold;
 }
+.productCard__discount::after{
+    content: '';
+    display: block;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: 3px dashed red;
+    position: absolute;
+    animation: discountRotate 15s linear infinite;
+}
 .productCard__image{
     width: 100%;
+    height: 70%;
+}
+.productCard__prices{
+    display: flex;
+    padding: 2px 0;
+    justify-content: space-around;
+    align-items: center;
 }
 .productCard__info{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: #eee;
     padding: 5px;
     font-weight: bold;
+    height: 25%;
+}
+.productCard__prices--default{
+    font-size: 25px;
+}
+.productCard__prices--discount{
+    font-size: 20px;
+    color: grey;
+    text-decoration: line-through;
+}
+
+@keyframes discountRotate{
+    0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
 }
