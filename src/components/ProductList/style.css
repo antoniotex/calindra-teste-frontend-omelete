@@ -1,0 +1,17 @@
+.productList{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.productList__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productList__title{
+    color: #eee;
+    font-size: 35px;
+    align-self: center;
+}

@@ -19,10 +19,10 @@
     background-color: #5b5b5b;
     border-radius: 10px 0 0 10px;
     font-size: 20px;
-    color: #fff;
+    color: #eee;
     padding-left: 15px;
 }
-.search__query:focus{
+.search__query:focus, .search__submit:focus{
     outline: none;
 }
 .search__submit{

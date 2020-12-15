@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { ProductsContext } from '../../contexts/productsContext'
-import Loading from '../Loading'
 import logo from '../../assets/images/logo-omelete.svg'
 import './style.css'
 

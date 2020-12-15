@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
 export const ProductsContext = createContext()
@@ -6,9 +6,9 @@ export const ProductsContext = createContext()
 const ProductsProvider = ({ children }) => {
     const [ products, setProducts ] = useState([])
 
-    // useEffect(() => {
-    //     searchProducts()
-    // }, []);
+    useEffect(() => {
+        searchProducts()
+    }, []);
 
     const searchProducts = async (query) => {
         try {
