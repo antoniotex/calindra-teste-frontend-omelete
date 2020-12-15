@@ -21,7 +21,7 @@ const Header = () => {
         <nav className='header'>
             <img src={logo} className='header__logo' alt='Logo da Omelete Store.' title='Logo da Omelete Store' />
             <form className='search' onSubmit={handleSubmit}>
-                <input className='search__query' placeholder='Busque seu próximo produto incrivel' type='text' name='search' value={query} onChange={e => setQuery(e.target.value)} />
+                <input className='search__query' placeholder='Buscar produtos incríveis' type='text' name='search' value={query} onChange={e => setQuery(e.target.value)} />
                 <input className='search__submit' type='submit' value='Buscar' />
             </form>
         </nav>

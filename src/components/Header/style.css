@@ -4,6 +4,7 @@
     margin: 20px auto;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid red;
 }
 .search{
     max-width: 500px;
@@ -36,7 +37,17 @@
     cursor: pointer;
 }
 
-/* 
-5b5b5b
-ffbf00
- */
+@media screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .search{
+        margin-top: 15px;
+        width: 97%;
+    }
+    .search__query{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+}
