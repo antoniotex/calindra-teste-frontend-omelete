@@ -13,7 +13,7 @@ const ProductList = () => {
                     : `Não encontramos nenhum produto em sua busca por '${products.query}'`}
             </h1>
 
-            {products.query && <a className='productList__back' onClick={() => searchProducts('')}>Voltar para Página Inicial</a>}
+            {products.query && <span className='productList__back' onClick={() => searchProducts('')}>Voltar para Página Inicial</span>}
 
             <div className='productList__list'>
                 {products.items && products.items.map((item, index) => (
