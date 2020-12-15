@@ -4,7 +4,7 @@ import axios from 'axios'
 export const ProductsContext = createContext()
 
 const ProductsProvider = ({ children }) => {
-    const [ products, setProducts ] = useState([])
+    const [ products, setProducts ] = useState({})
     const [ loading, setLoading ] = useState(false)
 
     useEffect(() => {
@@ -15,7 +15,12 @@ const ProductsProvider = ({ children }) => {
         setLoading(true)
         try {
             const response = await axios.get(`/autocomplete/${query || 'marvel'}`)
-            setProducts(response.data.items)
+            const { items } = response.data
+            console.log(items)
+            setProducts({
+                items,
+                query
+            })
             
         } catch (error) {
             console.log(error.message)

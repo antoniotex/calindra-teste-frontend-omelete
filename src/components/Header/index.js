@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo-omelete.svg'
 import './style.css'
 
 const Header = () => {
-    const [query, setQuery] = useState('batman')
+    const [query, setQuery] = useState('')
 
     const { searchProducts } = useContext(ProductsContext)
 

@@ -5,13 +5,13 @@ import Loading from '../../components/Loading'
 import { ProductsContext } from '../../contexts/productsContext'
 
 const Main = () => {
-    const { products, loading } = useContext(ProductsContext)
+    const { loading } = useContext(ProductsContext)
 
     return (
         <main>
             <Header />
             { loading && <Loading /> }
-            { products.length > 0 && !loading && <ProductList /> }
+            { !loading && <ProductList /> }
         </main>
     )
 }
