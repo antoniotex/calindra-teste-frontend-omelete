@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/calindra-teste-frontend-omelete/static/css/main.6294a2e5.chunk.css",
+    "main.js": "/calindra-teste-frontend-omelete/static/js/main.33e252be.chunk.js",
+    "main.js.map": "/calindra-teste-frontend-omelete/static/js/main.33e252be.chunk.js.map",
+    "runtime-main.js": "/calindra-teste-frontend-omelete/static/js/runtime-main.63109336.js",
+    "runtime-main.js.map": "/calindra-teste-frontend-omelete/static/js/runtime-main.63109336.js.map",
+    "static/js/2.12b23c20.chunk.js": "/calindra-teste-frontend-omelete/static/js/2.12b23c20.chunk.js",
+    "static/js/2.12b23c20.chunk.js.map": "/calindra-teste-frontend-omelete/static/js/2.12b23c20.chunk.js.map",
+    "index.html": "/calindra-teste-frontend-omelete/index.html",
+    "static/css/main.6294a2e5.chunk.css.map": "/calindra-teste-frontend-omelete/static/css/main.6294a2e5.chunk.css.map",
+    "static/js/2.12b23c20.chunk.js.LICENSE.txt": "/calindra-teste-frontend-omelete/static/js/2.12b23c20.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/calindra-teste-frontend-omelete/static/media/background-dark.2c680a75.jpg",
+    "static/media/logo-omelete.8db4c730.svg": "/calindra-teste-frontend-omelete/static/media/logo-omelete.8db4c730.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63109336.js",
+    "static/js/2.12b23c20.chunk.js",
+    "static/css/main.6294a2e5.chunk.css",
+    "static/js/main.33e252be.chunk.js"
+  ]
+}
