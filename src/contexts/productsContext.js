@@ -20,7 +20,7 @@ const ProductsProvider = ({ children }) => {
         try {
             let items = null;
 
-            console.log('passei')
+            console.log('passe')
 
             // Esta verificação é feita só para preencher os produtos na página inicial
             if(!query){
