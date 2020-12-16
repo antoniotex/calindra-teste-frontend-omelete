@@ -27,7 +27,7 @@ const ProductsProvider = ({ children }) => {
                     axios.get(`/autocomplete/${'batman'}`),
                     axios.get(`/autocomplete/${'caneca'}`)
                 ]).then(axios.spread((res1, res2, res3) => {
-                    console.log('ITEMS', res1.data.items)
+                    console.log('ITEMS', res1.data)
                     items = [...res1.data.items, ...res2.data.items, ...res3.data.items]
                }))
             }else{
