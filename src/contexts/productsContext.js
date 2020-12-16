@@ -20,8 +20,6 @@ const ProductsProvider = ({ children }) => {
         try {
             let items = null;
 
-            console.log('passe')
-
             // Esta verificação é feita só para preencher os produtos na página inicial
             if(!query){
                 await axios.all([
@@ -29,6 +27,7 @@ const ProductsProvider = ({ children }) => {
                     axios.get(`/autocomplete/${'batman'}`),
                     axios.get(`/autocomplete/${'caneca'}`)
                 ]).then(axios.spread((res1, res2, res3) => {
+                    console.log('ITEMS', res1.data.items)
                     items = [...res1.data.items, ...res2.data.items, ...res3.data.items]
                }))
             }else{
@@ -42,7 +41,7 @@ const ProductsProvider = ({ children }) => {
             })
             
         } catch (error) {
-            console.log(error.message)
+            console.log('ERRO -->> ', error.message)
         }
         finally{
             setLoading(false)
