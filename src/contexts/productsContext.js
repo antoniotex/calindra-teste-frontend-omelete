@@ -20,8 +20,6 @@ const ProductsProvider = ({ children }) => {
         try {
             let items = null;
 
-            console.log('passe')
-
             // Esta verificação é feita só para preencher os produtos na página inicial
             if(!query){
                 await axios.all([

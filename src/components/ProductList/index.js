@@ -8,7 +8,8 @@ const ProductList = () => {
     return (
         <section className='productList'>
             <h1 className='productList__title'>
-                { !products.query ? 'Página Inicial'
+                { !products || !products.items || typeof products.items !== 'object' ? 'Ocorreu um erro, tente novamente mais tarde'
+                    : !products.query ? 'Página Inicial'
                     : products.items.length > 0 ? `Busca por '${products.query}'`
                     : `Não encontramos nenhum produto em sua busca por '${products.query}'`}
             </h1>
