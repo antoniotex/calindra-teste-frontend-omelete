@@ -1,7 +1,7 @@
 # Desafio Frontend Calindra
 
 ## Descrição do Projeto
-Para este projeto, o objetivo era basicamente identificar qual API o site https://store.omelete.com.br utilizava para preencher o autocomplete do seu campo de busca. Com o endpoint em màos, a próxima etapa seria tratar o retorno da API e montar uma view dos produtos retornados, de acordo com a query passada.
+Para este projeto, o objetivo era basicamente identificar qual API o site https://store.omelete.com.br utilizava para preencher o autocomplete do seu campo de busca. Com o endpoint em mãos, a próxima etapa seria tratar o retorno da API e montar uma view dos produtos retornados, de acordo com a query passada.
 
 ## Como utilizar
 Ao acessar o site, alguns produtos são carregados automaticamente para dar um ar de ecommerce completo. O Usuário poderá digitar uma palavra-chave no campo de busca e clicar em Buscar. Fazendo isso, os produtos encontrados serão mostrados na tela após o loading.
